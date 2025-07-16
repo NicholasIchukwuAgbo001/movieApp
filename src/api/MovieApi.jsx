@@ -12,3 +12,5 @@ export const MovieApiSlice = createApi({
     }),
   }),
 });
+
+export const {useGetPopularMoviesQuery} = MovieApiSlice;
