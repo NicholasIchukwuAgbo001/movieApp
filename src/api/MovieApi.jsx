@@ -4,7 +4,10 @@ const movieBaseUrl = "https://api.themoviedb.org/3/movie"
 
 export const MovieApiSlice = createApi({
     reducerPath: "movieApi",
-    baseQuery: fetchBaseQuery({
-        baseUrl:``
+    baseQuery: fetchBaseQuery({ baseUrl:``}),
+    endpoints: (builder) => ({
+        getPopularMovies: builder.query({
+            query:()=>(`/popular`)
+        })
     })
 })
