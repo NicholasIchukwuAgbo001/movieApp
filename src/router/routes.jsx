@@ -15,7 +15,12 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <AppLayout />,
-        children:[]
+        // children:[
+        //     {
+        //         path: "/layout/nowplaying",
+        //         element: <NowPlaying />
+        //     }
+        // ]
     }
 ])
 

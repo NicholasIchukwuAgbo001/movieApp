@@ -1,8 +1,6 @@
 const Movie = () => {
   return (
-    <div className="bg-stone-500">
-      Movie
-    </div>
+   <h1>Movie</h1>
   )
 }
 

@@ -1,9 +1,7 @@
-import { Link } from "react-router"
-
 const NavBar = () => {
   return (
     <div>
-      NavBar
+      <h1 className="text-3xl font-bold underline">NavBar</h1>
     </div>
   )
 }
