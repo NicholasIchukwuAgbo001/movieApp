@@ -1,9 +1,7 @@
 import { useGetPopularMoviesQuery } from "../../api/MovieApi";
 
 const Movie = () => {
-  const { data, error } = useGetPopularMoviesQuery();
-
-  if (error) return <p>Error fetching movies.</p>;
+  const { data } = useGetPopularMoviesQuery();
 
   return (
     <div className="grid grid-cols-5 gap-4">
