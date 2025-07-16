@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const movieBaseUrl = "https://api.themoviedb.org/3/movie";
+const movieBaseUrl = "https://api.themoviedb.org/3";
 const API_KEY = import.meta.env.VITE_API_MOVIE_API_KEY;
 
 export const MovieApiSlice = createApi({
@@ -8,9 +8,9 @@ export const MovieApiSlice = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: movieBaseUrl }),
   endpoints: (builder) => ({
     getPopularMovies: builder.query({
-      query: () => `/popular?api_key=${API_KEY}`,
+      query: () => `/movie/popular?api_key=${API_KEY}`,
     }),
   }),
 });
 
-export const {useGetPopularMoviesQuery} = MovieApiSlice;
+export const { useGetPopularMoviesQuery } = MovieApiSlice;
