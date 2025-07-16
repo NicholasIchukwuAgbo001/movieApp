@@ -4,7 +4,7 @@ import { MovieApiSlice } from "../api/MovieApi";
 
 export const Store = configureStore({
     reducer: {
-
+        [MovieApiSlice.reducerPath]: MovieApiSlice.reducer
     },
     middleware:(getDefaultMiddleware) => (
         getDefaultMiddleware().concat()
