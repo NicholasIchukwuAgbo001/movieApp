@@ -1,4 +1,4 @@
-import {HiOutlineCalendarDays, HiOutlineCog6Tooth, HiOutlineHome, HiOutlineHomeModern, HiOutlineUser} from "react-icons/hi2"
+import {HiOutlineCalendarDays, HiOutlineCog6Tooth} from "react-icons/hi2"
 import {NavLink} from "react-router"
 
 const SideBar = () => {
@@ -11,13 +11,8 @@ const SideBar = () => {
         </li>
 
         <li className="flex items-center gap-5">
-          <HiOutlineCalendarDays />
-          <span>Home</span>
-        </li>
-
-        <li className="flex items-center gap-5">
-          <HiOutlineCalendarDays />
-          <span>Home</span>
+          <HiOutlineCog6Tooth />
+          <span>Settings</span>
         </li>
       </NavLink> 
       
