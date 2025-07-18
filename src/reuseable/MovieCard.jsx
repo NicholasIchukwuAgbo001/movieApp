@@ -20,12 +20,12 @@ const MovieCard = () => {
             <img
               src={`${IMG_URL}${result.poster_path}`}
               alt={result.title}
-              className="w-full h-72"
+              className="w-full h-72 hover:scale-95 transition-all duration-2000"
             />
             <div className="p-4">
-              <h3 className="text-lg font-semibold mb-2">{result.title}</h3>
-              <p className="text-yellow-500 text-sm">{renderStars(result.vote_average)}</p>
-              <p className="text-sm text-gray-500 mt-2 line-clamp-2">{result.overview}</p>
+              <h3 className="text-lg font-semi mb-2">{result.title}</h3>
+              <p className="text-yellow-500 text-sm">Ratings:{renderStars(result.vote_average)}</p>
+              <p className="text-sm text-gray-500 mt-2 line-clamp-3 hover:underline">{result.overview}</p>
             </div>
           </div>
         ))}
