@@ -3,10 +3,11 @@ import Login from "../auth/Login"
 import Signup from "../auth/Signup"
 import AppLayout from "../pages/AppLayout";
 import Movie from "../components/moviePage/Movie";
+import MovieCard from "../reuseable/MovieCard";
 
 const router = createBrowserRouter([
   {
-    path: "/login",
+    path: "/",
     element: <Login />,
   },
   {
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
     element: <Signup />,
   },
   {
-    path: "/",
+    path: "/moviecard",
+    element: <MovieCard/>
+  },
+  {
+    path: "applyout",
     element: <AppLayout />,
     children: [
       {

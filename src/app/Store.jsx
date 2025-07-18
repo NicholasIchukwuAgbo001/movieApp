@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { setupListeners } from "@reduxjs/toolkit/query";
+// import { setupListeners } from "@reduxjs/toolkit/query";
 import { MovieApiSlice } from "../api/MovieApi";
 
 export const Store = configureStore({
@@ -10,4 +10,4 @@ export const Store = configureStore({
     getDefaultMiddleware().concat(MovieApiSlice.middleware),
 });
 
-setupListeners(Store.dispatch);
+// setupListeners(Store.dispatch);

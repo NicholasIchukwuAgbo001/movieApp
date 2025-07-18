@@ -1,11 +1,8 @@
-import { useGetPopularMoviesQuery } from "../../api/MovieApi";
-
 const Movie = () => {
-  const { data } = useGetPopularMoviesQuery();
 
   return (
     <div className="grid grid-cols-5 gap-4">
-      {data?.results?.map((movie) => (
+      {/* {data?.results?.map((movie) => (
         <div key={movie.id}>
           <h2>{movie.title}</h2>
           <img
@@ -13,7 +10,7 @@ const Movie = () => {
             alt={movie.title}
           />
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
