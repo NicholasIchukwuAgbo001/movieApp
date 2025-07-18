@@ -8,7 +8,7 @@ const MovieCard = () => {
     <div>
       {data?.results.map((result) => (
         <div key={result.id}>
-          <img src={`${IMG_URL}${result.poster_path}`} alt={result.title} />
+          <img src={`${IMG_URL}${result.poster_path}`} alt="img" />
           <p>{result.title}</p>
           <p>{result.overview}</p>
           <p>{result.vote_average}</p>
