@@ -1,7 +1,9 @@
+import { NavLink } from "react-router"
+
 const SideBar = () => {
   return (
     <nav className="bg-yellow-200 pr-20 pl-5">
-      SideBar
+      <NavLink>Popular</NavLink>
     </nav>
   )
 }

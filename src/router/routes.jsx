@@ -7,7 +7,7 @@ import MovieCard from "../reuseable/MovieCard";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/login",
     element: <Login />,
   },
   {
@@ -15,16 +15,12 @@ const router = createBrowserRouter([
     element: <Signup />,
   },
   {
-    path: "/moviecard",
-    element: <MovieCard/>
-  },
-  {
-    path: "applyout",
+    path: "/",
     element: <AppLayout />,
     children: [
       {
         index: true, 
-        element: <Movie />,
+        element: <MovieCard />,
       },
     ],
   },
